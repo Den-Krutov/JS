@@ -11,7 +11,7 @@ function newPersonConstructor(firstName,secondName,age){
     return person
 }
 function newPerson(person){
-    const newPerson = {...person}
+    const newPerson = JSON.parse(JSON.stringify(person))
     newPerson.info.age++
     return newPerson
 }

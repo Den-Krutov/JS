@@ -81,4 +81,29 @@ const newPerson=({nickname,age})=>{
 }
 console.log(newPerson(person))
 
+if(!newPerson(person).specialization){
+    console.log('Not work')
+}
+if(newPerson(person).age>20){
+    console.log('Worked')
+}else if(newPerson(person).age>=18){
+    console.log('Learning')
+}else{
+    console.log('Lucky man')
+}
 
+const sumPositiveNumber=(a,b)=>{
+    if(typeof a!=='number' || typeof b!=='number'){
+        return `${a} or ${b} is not number`
+    }
+
+    if(a<=0||b<=0){
+        return `${a} or ${b} is not positive`
+    }
+
+    return a+b
+}
+
+console.log(sumPositiveNumber(1,3))
+console.log(sumPositiveNumber(0,3))
+console.log(sumPositiveNumber(undefined,3))

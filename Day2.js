@@ -25,7 +25,11 @@ const person={
     age:20
 }
 const programmist={
-    ...person,
     specialization:'FrontEnd'
 }
-console.log(programmist)
+const student={
+    ...person,
+    ...programmist,
+    faculty:'Mathematics'
+}
+console.table(student)

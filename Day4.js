@@ -82,4 +82,3 @@ console.log(rez)
 console.log(nickname.length)
 const nickname2=new String('Den Krutov')
 console.dir(nickname2)
-
